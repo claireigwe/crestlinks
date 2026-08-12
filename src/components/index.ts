@@ -24,6 +24,7 @@ export * from './cards/StatisticCard/StatisticCard';
 export * from './forms/Input/Input';
 export * from './forms/Textarea/Textarea';
 export * from './forms/Select/Select';
+export * from './forms/InquiryForm/InquiryForm';
 
 // Navigation
 export * from './navigation/Header/Header';
@@ -57,3 +58,10 @@ export * from './sections/ServicesOverview/ServicesOverview';
 export * from './sections/ShipmentJourney/ShipmentJourney';
 export * from './sections/DocumentationCompliance/DocumentationCompliance';
 export * from './sections/BusinessOutcomes/BusinessOutcomes';
+
+// Contact Page Sections
+export * from './sections/ContactHero/ContactHero';
+export * from './sections/ContactMain/ContactMain';
+export * from './sections/ContactSidebar/ContactSidebar';
+export * from './sections/WhatHappensNext/WhatHappensNext';
+

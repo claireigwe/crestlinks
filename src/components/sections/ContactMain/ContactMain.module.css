@@ -1,0 +1,52 @@
+/* ==========================================================================
+   CONTACT MAIN MODULE CSS
+   ========================================================================== */
+
+.section {
+  padding-top: var(--space-8);
+  padding-bottom: var(--section-padding-y-mobile);
+  background-color: var(--color-background);
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding-top: var(--space-12);
+    padding-bottom: var(--section-padding-y-tablet);
+  }
+}
+
+@media (min-width: 1024px) {
+  .section {
+    padding-top: var(--space-12);
+    padding-bottom: var(--section-padding-y-desktop);
+  }
+}
+
+.layoutGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-10);
+  align-items: start;
+}
+
+@media (min-width: 1024px) {
+  .layoutGrid {
+    grid-template-columns: 1fr 380px;
+    gap: var(--space-12);
+  }
+}
+
+@media (min-width: 1280px) {
+  .layoutGrid {
+    grid-template-columns: 1fr 420px;
+    gap: var(--space-16);
+  }
+}
+
+.primaryColumn {
+  width: 100%;
+}
+
+.secondaryColumn {
+  width: 100%;
+}

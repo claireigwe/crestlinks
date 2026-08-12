@@ -35,10 +35,14 @@ export function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const isLightPage = pathname === '/contact';
+
   return (
     <>
       <header
-        className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}
+        className={`${styles.header} ${isScrolled ? styles.scrolled : ''} ${
+          isLightPage && !isScrolled ? styles.light : ''
+        }`}
       >
         <Container size="wide">
           <div className={styles.inner}>

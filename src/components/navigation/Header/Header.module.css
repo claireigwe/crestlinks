@@ -192,3 +192,39 @@
   width: 24px;
   height: 24px;
 }
+
+/* ==========================================================================
+   LIGHT PAGE HEADER STATE (Unscrolled on light background pages like Contact)
+   ========================================================================== */
+.light .logo {
+  color: var(--color-text);
+}
+
+.light .navLink {
+  color: var(--color-text-secondary);
+}
+
+.light .navLink:hover {
+  color: var(--color-primary);
+}
+
+.light .activeLink {
+  color: var(--color-primary);
+}
+
+.light .activeLink::after {
+  background-color: var(--color-primary);
+}
+
+.light .menuToggle {
+  border-color: var(--color-border);
+  background-color: var(--color-surface);
+  color: var(--color-text);
+}
+
+.light .menuToggle:hover {
+  background-color: var(--color-primary-soft);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
