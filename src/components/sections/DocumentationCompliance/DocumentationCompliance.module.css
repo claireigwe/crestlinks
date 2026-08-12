@@ -1,0 +1,86 @@
+.section {
+  background: linear-gradient(135deg, #121a16 0%, #1d4332 60%, #121a16 100%);
+  color: #ffffff;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: var(--space-20);
+  padding-bottom: var(--space-24);
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+}
+
+.headerWrapper {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.headline {
+  font-family: var(--heading-font-family);
+  font-size: clamp(2.25rem, 1.8rem + 1.8vw, 3.5rem);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.15;
+  letter-spacing: var(--tracking-tight);
+  color: #ffffff;
+  margin: 0;
+}
+
+.subheading {
+  font-family: var(--body-font-family);
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+}
+
+/* 3-Column Editorial Documentation Layout */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: var(--space-12);
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-12);
+  }
+}
+
+.docColumn {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.num {
+  font-family: var(--heading-font-family);
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-secondary);
+  letter-spacing: var(--tracking-wider);
+}
+
+.cardTitle {
+  font-family: var(--heading-font-family);
+  font-size: var(--text-2xl);
+  font-weight: var(--font-weight-bold);
+  color: #ffffff;
+  margin: 0;
+  line-height: var(--leading-tight);
+}
+
+.cardText {
+  font-family: var(--body-font-family);
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+}

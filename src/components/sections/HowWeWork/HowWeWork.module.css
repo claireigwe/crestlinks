@@ -1,0 +1,99 @@
+.section {
+  background: linear-gradient(135deg, #121a16 0%, #1d4332 60%, #121a16 100%);
+  color: #ffffff;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: var(--space-16);
+  padding-bottom: var(--space-20);
+}
+
+.headerWrapper {
+  max-width: 720px;
+  margin: 0 auto var(--space-12) auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.eyebrow {
+  background-color: rgba(181, 139, 66, 0.15) !important;
+  color: var(--color-secondary) !important;
+  border: 1px solid rgba(181, 139, 66, 0.3) !important;
+  font-size: var(--text-xs) !important;
+  font-weight: var(--font-weight-semibold) !important;
+}
+
+.headline {
+  font-family: var(--heading-font-family);
+  font-size: clamp(2.25rem, 1.8rem + 1.8vw, 3.5rem);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.15;
+  letter-spacing: var(--tracking-tight);
+  color: #ffffff;
+  margin: 0;
+}
+
+.subheading {
+  font-family: var(--body-font-family);
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.pillarCard {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  transition: all var(--duration-normal) var(--ease-soft);
+}
+
+.pillarCard:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: var(--color-secondary);
+  transform: translateY(-4px);
+}
+
+.pillarNum {
+  font-family: var(--heading-font-family);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-secondary);
+  letter-spacing: var(--tracking-wider);
+}
+
+.pillarTitle {
+  font-family: var(--heading-font-family);
+  font-size: var(--text-xl);
+  font-weight: var(--font-weight-bold);
+  color: #ffffff;
+  margin: 0;
+}
+
+.pillarText {
+  font-family: var(--body-font-family);
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+}

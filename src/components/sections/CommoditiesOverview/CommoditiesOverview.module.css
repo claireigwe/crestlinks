@@ -1,0 +1,62 @@
+.section {
+  background-color: var(--color-surface-alt);
+  border-bottom: 1px solid var(--color-border);
+  padding-top: var(--space-16);
+  padding-bottom: var(--space-20);
+}
+
+.contentWrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-8);
+}
+
+.textGroup {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.headline {
+  font-family: var(--heading-font-family);
+  font-size: clamp(2rem, 1.6rem + 1.5vw, 3.25rem);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.18;
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-text);
+  margin: 0;
+}
+
+.paragraph {
+  font-family: var(--body-font-family);
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 8;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--color-border);
+  background-color: var(--color-surface);
+}
+
+.overviewImage {
+  object-fit: cover;
+  transition: transform var(--duration-slow) var(--ease-soft);
+}
+
+.imageContainer:hover .overviewImage {
+  transform: scale(1.02);
+}

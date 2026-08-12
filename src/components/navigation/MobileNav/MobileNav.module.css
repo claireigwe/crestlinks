@@ -1,0 +1,114 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-modal);
+  background-color: var(--overlay-dark);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--duration-medium) var(--ease-soft),
+              visibility var(--duration-medium) var(--ease-soft);
+}
+
+.overlayOpen {
+  opacity: 1;
+  visibility: visible;
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: calc(var(--z-modal) + 1);
+  width: 100%;
+  max-width: 360px;
+  background-color: var(--color-surface);
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-xl);
+  transform: translateX(100%);
+  transition: transform var(--duration-medium) var(--ease-soft);
+}
+
+.drawerOpen {
+  transform: translateX(0);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-6);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.closeButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background-color: transparent;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: var(--button-transition);
+}
+
+.closeButton:hover {
+  background-color: var(--color-primary-soft);
+  color: var(--color-primary);
+}
+
+.closeButton:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.content {
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.navList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navLink {
+  font-family: var(--heading-font-family);
+  font-size: var(--text-2xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+  text-decoration: none;
+  transition: var(--link-transition);
+  display: block;
+  padding: var(--space-2) 0;
+}
+
+.navLink:hover {
+  color: var(--color-primary);
+  transform: translateX(var(--translate-small));
+}
+
+.activeLink {
+  color: var(--color-primary);
+}
+
+.footer {
+  padding: var(--space-6);
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}

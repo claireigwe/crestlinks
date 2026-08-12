@@ -1,0 +1,118 @@
+/* ==========================================================================
+   TYPOGRAPHY TOKENS
+   CrestLinks Design System
+   ========================================================================== */
+
+:root {
+    /* ==========================================================================
+     FONT FAMILIES
+     ========================================================================== */
+
+    --font-heading: var(--font-fraunces, "Fraunces", serif);
+    --font-body: var(--font-instrument-sans, "Instrument Sans", sans-serif);
+
+    /* ==========================================================================
+     FONT WEIGHTS
+     ========================================================================== */
+
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* ==========================================================================
+     FONT SIZES
+     Fluid Typography
+     ========================================================================== */
+
+    --text-xs: clamp(0.75rem, 0.72rem + 0.08vw, 0.813rem);
+    --text-sm: clamp(0.875rem, 0.84rem + 0.1vw, 0.938rem);
+    --text-base: clamp(1rem, 0.97rem + 0.12vw, 1.125rem);
+    --text-lg: clamp(1.125rem, 1.08rem + 0.18vw, 1.25rem);
+    --text-xl: clamp(1.375rem, 1.3rem + 0.35vw, 1.5rem);
+    --text-2xl: clamp(1.75rem, 1.55rem + 0.7vw, 2rem);
+    --text-3xl: clamp(2.25rem, 2rem + 1vw, 2.75rem);
+    --text-4xl: clamp(2.75rem, 2.3rem + 1.8vw, 3.75rem);
+    --text-5xl: clamp(3.5rem, 3rem + 2.5vw, 5rem);
+    --text-6xl: clamp(4.25rem, 3.5rem + 3vw, 6rem);
+
+    /* ==========================================================================
+     LINE HEIGHTS
+     ========================================================================== */
+
+    --leading-none: 1;
+    --leading-tight: 1.15;
+    --leading-snug: 1.25;
+    --leading-normal: 1.5;
+    --leading-relaxed: 1.7;
+    --leading-loose: 1.9;
+
+    /* ==========================================================================
+     LETTER SPACING
+     ========================================================================== */
+
+    --tracking-tighter: -0.06em;
+    --tracking-tight: -0.03em;
+    --tracking-normal: 0;
+    --tracking-wide: 0.03em;
+    --tracking-wider: 0.06em;
+
+    /* ==========================================================================
+     HEADING TOKENS
+     ========================================================================== */
+
+    --heading-display-size: var(--text-6xl);
+    --heading-h1-size: var(--text-5xl);
+    --heading-h2-size: var(--text-4xl);
+    --heading-h3-size: var(--text-3xl);
+    --heading-h4-size: var(--text-2xl);
+    --heading-h5-size: var(--text-xl);
+    --heading-h6-size: var(--text-lg);
+
+    --heading-font-family: var(--font-heading);
+    --heading-font-weight: var(--font-weight-semibold);
+    --heading-line-height: var(--leading-tight);
+    --heading-letter-spacing: var(--tracking-tight);
+
+    /* ==========================================================================
+     BODY TOKENS
+     ========================================================================== */
+
+    --body-font-family: var(--font-body);
+    --body-font-size: var(--text-base);
+    --body-font-weight: var(--font-weight-regular);
+    --body-line-height: var(--leading-relaxed);
+
+    /* ==========================================================================
+     BUTTONS
+     ========================================================================== */
+
+    --button-font-family: var(--font-body);
+    --button-font-size: var(--text-sm);
+    --button-font-weight: var(--font-weight-semibold);
+    --button-letter-spacing: var(--tracking-wide);
+
+    /* ==========================================================================
+     LABELS
+     ========================================================================== */
+
+    --label-font-family: var(--font-body);
+    --label-font-size: var(--text-sm);
+    --label-font-weight: var(--font-weight-medium);
+
+    /* ==========================================================================
+     CAPTIONS
+     ========================================================================== */
+
+    --caption-font-size: var(--text-xs);
+    --caption-line-height: var(--leading-normal);
+
+    /* ==========================================================================
+     TRANSITIONS
+     ========================================================================== */
+
+    --transition-fast: 150ms ease;
+    --transition-base: 250ms ease;
+    --transition-slow: 400ms ease;
+}

@@ -1,0 +1,30 @@
+.sectionHeading {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-bottom: var(--space-12);
+}
+
+.align-left {
+  text-align: left;
+  align-items: flex-start;
+}
+
+.align-center {
+  text-align: center;
+  align-items: center;
+}
+
+.align-right {
+  text-align: right;
+  align-items: flex-end;
+}
+
+.title {
+  margin: 0;
+}
+
+.description {
+  max-width: 680px;
+  margin: 0;
+}

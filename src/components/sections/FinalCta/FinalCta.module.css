@@ -1,0 +1,70 @@
+.section {
+  background: linear-gradient(
+    135deg,
+    #121a16 0%,
+    #1d4332 50%,
+    #25553f 100%
+  );
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding: var(--space-20) 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-6);
+  max-width: 760px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.eyebrow {
+  color: var(--color-secondary);
+  font-family: var(--body-font-family);
+  font-size: var(--text-xs);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  background: rgba(181, 139, 66, 0.15);
+  border: 1px solid rgba(181, 139, 66, 0.3);
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+}
+
+.headline {
+  font-family: var(--heading-font-family);
+  font-size: clamp(2.25rem, 1.8rem + 1.8vw, 3.75rem);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--leading-tight);
+  color: #ffffff;
+  margin: 0;
+}
+
+.subheading {
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+  color: rgba(255, 255, 255, 0.88);
+  margin: 0;
+  max-width: 640px;
+}
+
+.ctaButton {
+  background-color: var(--color-secondary) !important;
+  color: #121a16 !important;
+  border-color: var(--color-secondary) !important;
+  font-weight: var(--font-weight-bold) !important;
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.3) !important;
+  padding: 16px 40px !important;
+}
+
+.ctaButton:hover {
+  background-color: #c99c4c !important;
+  border-color: #c99c4c !important;
+  transform: translateY(var(--translate-hover)) !important;
+  box-shadow: 0 16px 40px rgba(181, 139, 66, 0.35) !important;
+}

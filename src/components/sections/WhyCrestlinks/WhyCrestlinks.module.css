@@ -1,0 +1,86 @@
+.section {
+  background: linear-gradient(135deg, #121a16 0%, #1d4332 100%);
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.headerWrapper {
+  margin-bottom: var(--space-12);
+}
+
+/* White & Gold typography override for dark section */
+.headerWrapper h2 {
+  color: #ffffff !important;
+}
+
+.headerWrapper p {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Glassmorphic Dark Feature Card styling */
+.darkCard {
+  background: rgba(255, 255, 255, 0.06) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: var(--radius-lg) !important;
+  padding: var(--space-8) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: var(--space-4) !important;
+  transition: all var(--duration-normal) var(--ease-soft) !important;
+}
+
+.darkCard:hover {
+  transform: translateY(-6px) !important;
+  border-color: var(--color-secondary) !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.3) !important;
+}
+
+.iconWrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  background-color: rgba(181, 139, 66, 0.2);
+  border: 1px solid var(--color-secondary);
+  color: var(--color-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cardTitle {
+  font-family: var(--heading-font-family);
+  font-size: var(--text-lg);
+  font-weight: var(--font-weight-semibold);
+  color: #ffffff;
+  margin: 0;
+}
+
+.cardDescription {
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+  color: rgba(255, 255, 255, 0.82);
+  margin: 0;
+}

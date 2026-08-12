@@ -1,0 +1,29 @@
+.statisticCard {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  text-align: center;
+  transition: var(--card-transition);
+}
+
+.statisticCard:hover {
+  transform: translateY(var(--translate-hover));
+  box-shadow: var(--shadow-md);
+}
+
+.value {
+  font-family: var(--heading-font-family);
+  font-size: var(--text-5xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  line-height: var(--leading-none);
+}
+
+.label {
+  font-weight: var(--font-weight-semibold);
+  margin-top: var(--space-2);
+}

@@ -1,0 +1,90 @@
+.section {
+  background: linear-gradient(135deg, #121a16 0%, #1d4332 60%, #121a16 100%);
+  color: #ffffff;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: var(--space-20);
+  padding-bottom: var(--space-24);
+  position: relative;
+  overflow: hidden;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+}
+
+.statementHeader {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  max-width: 920px;
+}
+
+.eyebrow {
+  background-color: rgba(181, 139, 66, 0.15) !important;
+  color: var(--color-secondary) !important;
+  border: 1px solid rgba(181, 139, 66, 0.3) !important;
+  font-size: var(--text-xs) !important;
+  font-weight: var(--font-weight-semibold) !important;
+  align-self: flex-start;
+}
+
+.giantStatement {
+  font-family: var(--heading-font-family);
+  font-size: clamp(2.5rem, 2rem + 2.5vw, 4.5rem);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.12;
+  letter-spacing: var(--tracking-tight);
+  color: #ffffff;
+  margin: 0;
+}
+
+/* 3-Column Asymmetric Manifesto Breakdown */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: var(--space-12);
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-12);
+  }
+}
+
+.manifestoColumn {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  position: relative;
+}
+
+.columnNumber {
+  font-family: var(--heading-font-family);
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-secondary);
+  letter-spacing: var(--tracking-wider);
+}
+
+.columnTitle {
+  font-family: var(--heading-font-family);
+  font-size: var(--text-2xl);
+  font-weight: var(--font-weight-bold);
+  color: #ffffff;
+  margin: 0;
+  line-height: var(--leading-tight);
+}
+
+.columnText {
+  font-family: var(--body-font-family);
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+}

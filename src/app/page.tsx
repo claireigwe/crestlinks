@@ -1,0 +1,21 @@
+import {
+  Hero,
+  CredibilitySection,
+  CommodityShowcase,
+  ExportStory,
+  WhyChooseUsManifesto,
+  FinalCtaSection,
+} from '@/components';
+
+export default function HomePage() {
+  return (
+    <main>
+      <Hero />
+      <CredibilitySection />
+      <CommodityShowcase />
+      <ExportStory />
+      <WhyChooseUsManifesto />
+      <FinalCtaSection />
+    </main>
+  );
+}

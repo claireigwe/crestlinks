@@ -1,0 +1,152 @@
+/* ==========================================================================
+   ANIMATION TOKENS
+   CrestLinks Design System
+   ========================================================================== */
+
+:root {
+    /* ==========================================================================
+     EASING
+     ========================================================================== */
+
+    --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+    --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
+    --ease-smooth: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+    /* ==========================================================================
+     DURATIONS
+     ========================================================================== */
+
+    --duration-fast: 150ms;
+    --duration-normal: 250ms;
+    --duration-medium: 400ms;
+    --duration-slow: 600ms;
+    --duration-extra-slow: 900ms;
+
+    /* ==========================================================================
+     TRANSITIONS
+     ========================================================================== */
+
+    --transition-opacity:
+        opacity var(--duration-normal) var(--ease-soft);
+
+    --transition-transform:
+        transform var(--duration-medium) var(--ease-soft);
+
+    --transition-color:
+        color var(--duration-normal) var(--ease-standard);
+
+    --transition-background:
+        background-color var(--duration-normal) var(--ease-standard);
+
+    --transition-border:
+        border-color var(--duration-normal) var(--ease-standard);
+
+    --transition-shadow:
+        box-shadow var(--duration-medium) var(--ease-soft);
+
+    --transition-all:
+        all var(--duration-medium) var(--ease-soft);
+
+    /* ==========================================================================
+     SCALE
+     ========================================================================== */
+
+    --scale-hover: 1.02;
+    --scale-image-hover: 1.04;
+    --scale-active: 0.98;
+
+    /* ==========================================================================
+     TRANSLATION
+     ========================================================================== */
+
+    --translate-hover: -4px;
+    --translate-section: 20px;
+    --translate-small: 8px;
+
+    /* ==========================================================================
+     OPACITY
+     ========================================================================== */
+
+    --opacity-hidden: 0;
+    --opacity-visible: 1;
+
+    /* ==========================================================================
+     BLUR
+     ========================================================================== */
+
+    --blur-soft: 8px;
+    --blur-medium: 16px;
+
+    /* ==========================================================================
+     PARALLAX
+     ========================================================================== */
+
+    --parallax-offset: 20px;
+
+    /* ==========================================================================
+     SHADOW ELEVATION
+     ========================================================================== */
+
+    --shadow-hover:
+        0 18px 40px rgba(30, 37, 34, 0.12);
+
+    /* ==========================================================================
+     NAVIGATION
+     ========================================================================== */
+
+    --nav-transition:
+        background-color var(--duration-medium) var(--ease-soft),
+        backdrop-filter var(--duration-medium) var(--ease-soft),
+        box-shadow var(--duration-medium) var(--ease-soft);
+
+    /* ==========================================================================
+     BUTTONS
+     ========================================================================== */
+
+    --button-transition:
+        background-color var(--duration-normal) var(--ease-standard),
+        color var(--duration-normal) var(--ease-standard),
+        border-color var(--duration-normal) var(--ease-standard),
+        transform var(--duration-normal) var(--ease-soft),
+        box-shadow var(--duration-normal) var(--ease-soft);
+
+    /* ==========================================================================
+     CARDS
+     ========================================================================== */
+
+    --card-transition:
+        transform var(--duration-medium) var(--ease-soft),
+        box-shadow var(--duration-medium) var(--ease-soft),
+        border-color var(--duration-medium) var(--ease-standard);
+
+    /* ==========================================================================
+     IMAGES
+     ========================================================================== */
+
+    --image-transition:
+        transform var(--duration-slow) var(--ease-soft),
+        filter var(--duration-medium) var(--ease-standard);
+
+    /* ==========================================================================
+     LINKS
+     ========================================================================== */
+
+    --link-transition:
+        color var(--duration-normal) var(--ease-standard);
+
+    /* ==========================================================================
+     INPUTS
+     ========================================================================== */
+
+    --input-transition:
+        border-color var(--duration-normal) var(--ease-standard),
+        box-shadow var(--duration-normal) var(--ease-standard),
+        background-color var(--duration-normal) var(--ease-standard);
+
+    /* ==========================================================================
+     SECTION ENTRANCE
+     ========================================================================== */
+
+    --section-animation-duration: 700ms;
+    --section-animation-distance: 24px;
+}

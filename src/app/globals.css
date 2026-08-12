@@ -1,0 +1,260 @@
+/* ==========================================================================
+   GLOBAL STYLES & DESIGN TOKENS INTEGRATION
+   CrestLinks Website Foundation
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. DESIGN TOKENS IMPORT
+   -------------------------------------------------------------------------- */
+@import "../../styles/tokens/color.css";
+@import "../../styles/tokens/typography.css";
+@import "../../styles/tokens/spacing.css";
+@import "../../styles/tokens/animation.css";
+
+/* --------------------------------------------------------------------------
+   2. RESET & BOX SIZING
+   -------------------------------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* --------------------------------------------------------------------------
+   3. SMOOTH SCROLLING & HTML DEFAULTS
+   -------------------------------------------------------------------------- */
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* --------------------------------------------------------------------------
+   4. BODY DEFAULTS
+   -------------------------------------------------------------------------- */
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size);
+  font-weight: var(--body-font-weight);
+  line-height: var(--body-line-height);
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* --------------------------------------------------------------------------
+   5. SELECTION COLORS
+   -------------------------------------------------------------------------- */
+::selection {
+  background-color: var(--selection-background);
+  color: var(--selection-text);
+}
+
+/* --------------------------------------------------------------------------
+   6. IMAGE & MEDIA DEFAULTS
+   -------------------------------------------------------------------------- */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* --------------------------------------------------------------------------
+   7. HEADING DEFAULTS
+   -------------------------------------------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font-family);
+  font-weight: var(--heading-font-weight);
+  line-height: var(--heading-line-height);
+  letter-spacing: var(--heading-letter-spacing);
+  color: var(--color-text);
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1 { font-size: var(--heading-h1-size); }
+h2 { font-size: var(--heading-h2-size); }
+h3 { font-size: var(--heading-h3-size); }
+h4 { font-size: var(--heading-h4-size); }
+h5 { font-size: var(--heading-h5-size); }
+h6 { font-size: var(--heading-h6-size); }
+
+/* --------------------------------------------------------------------------
+   8. BUTTON DEFAULTS
+   -------------------------------------------------------------------------- */
+button {
+  font-family: var(--button-font-family);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  letter-spacing: var(--button-letter-spacing);
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+  transition: var(--button-transition);
+}
+
+button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* --------------------------------------------------------------------------
+   9. FORM DEFAULTS
+   -------------------------------------------------------------------------- */
+input,
+textarea,
+select {
+  font: inherit;
+  color: var(--color-text);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-3) var(--space-4);
+  transition: var(--input-transition);
+}
+
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-color: var(--color-primary);
+}
+
+/* --------------------------------------------------------------------------
+   10. LINK DEFAULTS
+   -------------------------------------------------------------------------- */
+a {
+  color: var(--color-link);
+  text-decoration: none;
+  transition: var(--link-transition);
+}
+
+a:hover {
+  color: var(--color-link-hover);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: var(--radius-xs);
+}
+
+/* --------------------------------------------------------------------------
+   11. REUSABLE UTILITY CLASSES
+   -------------------------------------------------------------------------- */
+
+/* Container Utilities */
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-padding-mobile);
+  padding-right: var(--container-padding-mobile);
+}
+
+.container-wide {
+  width: 100%;
+  max-width: var(--container-wide);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-padding-mobile);
+  padding-right: var(--container-padding-mobile);
+}
+
+.container-narrow {
+  width: 100%;
+  max-width: var(--container-narrow);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-padding-mobile);
+  padding-right: var(--container-padding-mobile);
+}
+
+@media (min-width: 768px) {
+  .container,
+  .container-wide,
+  .container-narrow {
+    padding-left: var(--container-padding-tablet);
+    padding-right: var(--container-padding-tablet);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container,
+  .container-wide,
+  .container-narrow {
+    padding-left: var(--container-padding-desktop);
+    padding-right: var(--container-padding-desktop);
+  }
+}
+
+/* Section Utilities */
+.section {
+  padding-top: var(--section-padding-y-mobile);
+  padding-bottom: var(--section-padding-y-mobile);
+}
+
+.section-sm {
+  padding-top: var(--space-10);
+  padding-bottom: var(--space-10);
+}
+
+.section-lg {
+  padding-top: var(--space-20);
+  padding-bottom: var(--space-20);
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding-top: var(--section-padding-y-tablet);
+    padding-bottom: var(--section-padding-y-tablet);
+  }
+
+  .section-sm {
+    padding-top: var(--space-12);
+    padding-bottom: var(--space-12);
+  }
+
+  .section-lg {
+    padding-top: var(--space-24);
+    padding-bottom: var(--space-24);
+  }
+}
+
+@media (min-width: 1024px) {
+  .section {
+    padding-top: var(--section-padding-y-desktop);
+    padding-bottom: var(--section-padding-y-desktop);
+  }
+
+  .section-lg {
+    padding-top: var(--space-32);
+    padding-bottom: var(--space-32);
+  }
+}

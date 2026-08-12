@@ -1,0 +1,95 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--button-font-family);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  letter-spacing: var(--button-letter-spacing);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  text-decoration: none;
+  transition: var(--button-transition);
+  border: 1px solid transparent;
+  gap: var(--space-2);
+  white-space: nowrap;
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Sizes */
+.sm {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-xs);
+}
+
+.md {
+  padding: var(--space-3) var(--space-6);
+  font-size: var(--text-sm);
+}
+
+.lg {
+  padding: 16px 36px;
+  font-size: var(--text-base);
+}
+
+/* Primary Variant */
+.primary {
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+  box-shadow: var(--shadow-sm);
+}
+
+.primary:hover {
+  background-color: var(--color-primary-hover);
+  color: var(--color-text-inverse);
+  transform: translateY(var(--translate-hover));
+  box-shadow: var(--shadow-md);
+}
+
+.primary:active {
+  transform: scale(var(--scale-active));
+}
+
+/* Secondary Variant */
+.secondary {
+  background-color: var(--color-surface);
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.secondary:hover {
+  background-color: var(--color-primary-soft);
+  color: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
+  transform: translateY(var(--translate-hover));
+}
+
+.secondary:active {
+  transform: scale(var(--scale-active));
+}
+
+/* Text Variant */
+.text {
+  background-color: transparent;
+  color: var(--color-primary);
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.text:hover {
+  color: var(--color-primary-hover);
+  text-decoration: underline;
+}
+
+/* Disabled */
+.disabled,
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+}
