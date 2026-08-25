@@ -11,7 +11,7 @@ export function WhoWeAre() {
         <div className={styles.grid}>
           <div className={styles.imageWrapper}>
             <Image
-              src="/images/story/inspection.png"
+              src="/images/story/inspection.jpg"
               alt="Agricultural quality control inspector conducting pre-shipment lab analysis in Nigeria"
               fill
               sizes="(max-width: 1023px) 100vw, 50vw"

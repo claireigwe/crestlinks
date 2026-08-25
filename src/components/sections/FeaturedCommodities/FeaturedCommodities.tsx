@@ -11,7 +11,7 @@ const featuredProducts = [
     category: 'Raw & Kernels',
     description:
       'High-yield raw cashew nuts and processed kernels sourced directly from prime Nigerian cashew growing belts.',
-    imageSrc: '/images/commodities/cashew.png',
+    imageSrc: '/images/commodities/cashew.jpg',
     imageAlt: 'Raw Nigerian cashew nuts in export jute sacks',
     origin: 'Nigeria',
     href: '/products#cashew',

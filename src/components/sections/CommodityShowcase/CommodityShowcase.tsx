@@ -29,7 +29,7 @@ const commodities: CommodityData[] = [
     category: 'Nuts & Kernels',
     overview:
       'High-yield raw cashew nuts and processed kernels sourced directly from prime Nigerian cashew growing belts, thoroughly dried and graded for international export.',
-    imageSrc: '/images/commodities/cashew.png',
+    imageSrc: '/images/commodities/cashew.jpg',
     imageAlt: 'Raw Nigerian cashew nuts packaged in export jute sacks',
     applications: 'Confectionery, Snack Foods, Roasting & Food Ingredients',
     grades: 'W240, WW320, Raw Nut Count 180-200 / KOR 48-52 lbs',

@@ -5,12 +5,20 @@ import { Badge } from '../../ui/Badge/Badge';
 import { Button } from '../../ui/Button/Button';
 import styles from './ProductsHero.module.css';
 
-export function ProductsHero() {
+interface ProductsHeroProps {
+  imageSrc?: string;
+  imageAlt?: string;
+}
+
+export function ProductsHero({
+  imageSrc = '/images/hero-products.jpg',
+  imageAlt = 'High-grade Nigerian agricultural export commodities ready for container loading under morning light',
+}: ProductsHeroProps = {}) {
   return (
     <section className={styles.section} aria-label="Export Commodities Catalogue">
       <Image
-        src="/images/hero-refined.png"
-        alt="High-grade Nigerian agricultural export commodities ready for container loading under morning light"
+        src={imageSrc}
+        alt={imageAlt}
         fill
         priority
         sizes="100vw"

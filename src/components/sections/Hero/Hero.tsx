@@ -5,14 +5,22 @@ import { Container } from '../../layout/Container/Container';
 import { Button } from '../../ui/Button/Button';
 import styles from './Hero.module.css';
 
-export function Hero() {
+interface HeroProps {
+  imageSrc?: string;
+  imageAlt?: string;
+}
+
+export function Hero({
+  imageSrc = '/images/hero-home.jpg',
+  imageAlt = 'Premium Nigerian agricultural export commodities packaged in stamped jute sacks at a sunlit port terminal',
+}: HeroProps = {}) {
   return (
     <section className={styles.hero} aria-label="CrestLinks Global Export Hero">
       {/* Full-Bleed Refined Agricultural Export Photography */}
       <div className={styles.imageWrapper}>
         <Image
-          src="/images/hero-refined.png"
-          alt="Premium Nigerian agricultural export commodities packaged in stamped jute sacks at a sunlit port terminal"
+          src={imageSrc}
+          alt={imageAlt}
           fill
           priority
           sizes="100vw"

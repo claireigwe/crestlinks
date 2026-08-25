@@ -27,7 +27,7 @@ const commodityList: CommodityDetail[] = [
     category: 'Nuts & Kernels',
     description:
       'Premium raw Nigerian cashew nuts sourced from high-yield orchards across Oyo, Kogi, and Kwara states. Renowned for high nut count and optimal kernel yield.',
-    imageSrc: '/images/commodities/cashew.png',
+    imageSrc: '/images/commodities/cashew.jpg',
     imageAlt: 'High-grade raw Nigerian cashew nuts packaged in heavy-duty export jute sacks',
     availableGrades: 'W180, W210, W240, W320, Raw In-Shell (KOR 48-52+ lbs)',
     packagingOptions: '80kg Multi-Wall Jute Sacks / Vacuum Foil Liners',

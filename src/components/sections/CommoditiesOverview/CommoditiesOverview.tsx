@@ -20,7 +20,7 @@ export function CommoditiesOverview() {
           {/* High-Resolution Commercial Inspection Banner Photography */}
           <div className={styles.imageContainer}>
             <Image
-              src="/images/story/inspection.png"
+              src="/images/story/inspection.jpg"
               alt="Agricultural quality control specialist inspecting Nigerian commodities for export readiness"
               fill
               sizes="(max-width: 1023px) 100vw, 80vw"

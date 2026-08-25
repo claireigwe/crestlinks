@@ -4,55 +4,62 @@
 
 .section {
   position: relative;
-  padding-top: calc(80px + var(--space-10));
-  padding-bottom: var(--space-8);
-  background-color: var(--color-background);
-  border-bottom: 1px solid var(--color-border);
+  background-color: #121a16;
+  color: #ffffff;
+  padding-top: calc(var(--space-20) + 40px);
+  padding-bottom: var(--space-16);
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-@media (min-width: 768px) {
-  .section {
-    padding-top: calc(80px + var(--space-12));
-    padding-bottom: var(--space-12);
-  }
+.backgroundImage {
+  object-fit: cover;
+  object-position: center;
 }
 
-@media (min-width: 1024px) {
-  .section {
-    padding-top: calc(80px + var(--space-16));
-    padding-bottom: var(--space-12);
-  }
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(18, 26, 22, 0.92) 0%,
+    rgba(18, 26, 22, 0.85) 60%,
+    rgba(18, 26, 22, 0.96) 100%
+  );
+  z-index: 1;
 }
 
 .contentWrapper {
-  max-width: var(--width-md);
+  position: relative;
+  z-index: 2;
+  max-width: 840px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
 }
 
 .badgeWrapper {
-  margin-bottom: var(--space-4);
+  margin-bottom: var(--space-2);
 }
 
 .headline {
-  font-family: var(--font-heading);
-  font-size: var(--text-4xl);
-  font-weight: var(--font-weight-semibold);
-  line-height: var(--leading-tight);
+  font-family: var(--heading-font-family);
+  font-size: clamp(2.25rem, 1.8rem + 2vw, 3.75rem);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.15;
   letter-spacing: var(--tracking-tight);
-  color: var(--color-text);
-  margin-bottom: var(--space-4);
-}
-
-@media (min-width: 768px) {
-  .headline {
-    font-size: var(--text-5xl);
-  }
+  color: #ffffff;
+  margin: 0;
 }
 
 .subheading {
-  font-family: var(--font-body);
+  font-family: var(--body-font-family);
   font-size: var(--text-lg);
-  font-weight: var(--font-weight-regular);
   line-height: var(--leading-relaxed);
-  color: var(--color-text-secondary);
-  max-width: 48ch;
+  color: rgba(255, 255, 255, 0.88);
+  margin: 0;
+  max-width: 680px;
 }

@@ -26,7 +26,7 @@ const chapters: ChapterData[] = [
     headline: 'Sourced Direct at the Origin',
     paragraph:
       'We partner directly with verified farming cooperatives across prime agricultural belts in Nigeria. This farm-level integration guarantees authentic product origin, sustainable harvest practices, and total supply chain traceability.',
-    imageSrc: '/images/story/farm.png',
+    imageSrc: '/images/story/farm.jpg',
     imageAlt: 'Lush green Nigerian farmland with local agricultural producer inspecting healthy crops under natural morning light',
     trustHighlightLabel: 'Traceability Standard',
     trustHighlightValue: '100% Direct Farm Co-op Sourcing & Region Tracking',
@@ -38,7 +38,7 @@ const chapters: ChapterData[] = [
     headline: 'Inspected with Independent Precision',
     paragraph:
       'Before any commodity leaves the warehouse, independent laboratory testing and physical grade inspections are conducted. Moisture content, purity levels, and defect rates are rigorously verified against international buyer specifications.',
-    imageSrc: '/images/story/inspection.png',
+    imageSrc: '/images/story/inspection.jpg',
     imageAlt: 'Agricultural quality control specialist in Nigeria examining raw export commodities under natural sunlight with inspection checklist',
     trustHighlightLabel: 'Quality Assurance',
     trustHighlightValue: 'Pre-Shipment Lab Analysis & Moisture Certificate Verification',
@@ -50,7 +50,7 @@ const chapters: ChapterData[] = [
     headline: 'Prepared for Overseas Transit',
     paragraph:
       'Commodities are packaged in heavy-duty multi-wall jute sacks, vacuum-sealed foil bags, or container liners specifically selected to maintain cargo freshness and prevent moisture absorption during maritime transit.',
-    imageSrc: '/images/story/packaging.png',
+    imageSrc: '/images/story/packaging.jpg',
     imageAlt: 'Export-grade raw Nigerian cashew nuts packaged in heavy-duty jute sacks',
     trustHighlightLabel: 'Packaging Standard',
     trustHighlightValue: 'Export-Grade Food Safe Sacks & Desiccant Liner Protection',
@@ -62,7 +62,7 @@ const chapters: ChapterData[] = [
     headline: 'Certified for Global Compliance',
     paragraph:
       'Complete handling of export documentation including Phytosanitary Certificates, NEPC Registration Clearance, Certificates of Origin, and Bills of Lading, ensuring frictionless port entry in destination countries.',
-    imageSrc: '/images/story/compliance.png',
+    imageSrc: '/images/story/compliance.jpg',
     imageAlt: 'Official agricultural export documentation with NEPC certificate seals on dark oak trade desk',
     trustHighlightLabel: 'Regulatory Guarantee',
     trustHighlightValue: 'NEPC License • Phytosanitary & Customs Clearance Approved',

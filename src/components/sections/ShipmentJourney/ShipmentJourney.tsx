@@ -25,7 +25,7 @@ const journeySteps: JourneyStep[] = [
     headline: 'Contractual Alignment & Specification Review',
     narrative:
       'Every shipment begins with explicit commercial alignment. CrestLinks reviews your commodity volume requirements, grade parameters, target moisture limits, shipping terms (FOB / CIF), and destination port schedules.',
-    imageSrc: '/images/story/farm.png',
+    imageSrc: '/images/story/farm.jpg',
     imageAlt: 'Agricultural export contract discussion and farm origin review',
     crestlinksRole: 'Contract terms alignment, specification sheet confirmation, and FOB/CIF quotation.',
     buyerExpectation: 'Clear, transparent pricing without hidden export surcharges or origin ambiguities.',
@@ -49,7 +49,7 @@ const journeySteps: JourneyStep[] = [
     headline: 'Independent Pre-Shipment Laboratory Analysis',
     narrative:
       'Before cargo leaves warehouse storage, independent laboratory testing and physical grade sampling verify nut count, moisture content, defect rates, and purity against contract specifications.',
-    imageSrc: '/images/story/inspection.png',
+    imageSrc: '/images/story/inspection.jpg',
     imageAlt: 'Agricultural quality control inspector conducting pre-shipment lab analysis under natural sunlight',
     crestlinksRole: 'Independent lab sampling, moisture certificate issuance, and export grade approval.',
     buyerExpectation: 'Empirical quality verification and guaranteed contract specification compliance.',
@@ -61,7 +61,7 @@ const journeySteps: JourneyStep[] = [
     headline: 'Complete Regulatory & Permit Handling',
     narrative:
       'CrestLinks coordinates all mandatory export documentation including Phytosanitary Certificates, NEPC permits, Certificates of Origin, commercial invoices, packing lists, and customs clearance filings.',
-    imageSrc: '/images/story/packaging.png',
+    imageSrc: '/images/story/packaging.jpg',
     imageAlt: 'Export-grade packaging in jute sacks and official NEPC documentation handling',
     crestlinksRole: 'End-to-end documentation filing, NEPC permit clearance, and phytosanitary endorsement.',
     buyerExpectation: 'Frictionless customs entry at destination ports without administrative delays.',

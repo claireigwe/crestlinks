@@ -4,12 +4,20 @@ import { Container } from '../../layout/Container/Container';
 import { Badge } from '../../ui/Badge/Badge';
 import styles from './AboutHero.module.css';
 
-export function AboutHero() {
+interface AboutHeroProps {
+  imageSrc?: string;
+  imageAlt?: string;
+}
+
+export function AboutHero({
+  imageSrc = '/images/hero-about.jpg',
+  imageAlt = 'Nigerian agricultural trade commodities packaged for global export under morning light',
+}: AboutHeroProps = {}) {
   return (
     <section className={styles.section} aria-label="About CrestLinks">
       <Image
-        src="/images/hero-refined.png"
-        alt="Nigerian agricultural trade commodities packaged for global export under morning light"
+        src={imageSrc}
+        alt={imageAlt}
         fill
         priority
         sizes="100vw"

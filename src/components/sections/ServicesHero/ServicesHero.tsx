@@ -4,12 +4,20 @@ import { Container } from '../../layout/Container/Container';
 import { Button } from '../../ui/Button/Button';
 import styles from './ServicesHero.module.css';
 
-export function ServicesHero() {
+interface ServicesHeroProps {
+  imageSrc?: string;
+  imageAlt?: string;
+}
+
+export function ServicesHero({
+  imageSrc = '/images/hero-services.jpg',
+  imageAlt = 'Commercial export ocean container loading at Nigerian port terminal',
+}: ServicesHeroProps = {}) {
   return (
     <section className={styles.section} aria-label="Export Services & Management">
       <Image
-        src="/images/hero-refined.png"
-        alt="Commercial export ocean container loading at Nigerian port terminal"
+        src={imageSrc}
+        alt={imageAlt}
         fill
         priority
         sizes="100vw"
