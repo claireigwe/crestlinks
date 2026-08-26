@@ -1,0 +1,138 @@
+/* ==========================================================================
+   NEPC CERTIFICATION SECTION MODULE CSS
+   ========================================================================== */
+
+.section {
+  position: relative;
+  padding-top: var(--space-20);
+  padding-bottom: var(--space-20);
+  background-color: var(--color-surface-alt);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  overflow: hidden;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-12);
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: 440px 1fr;
+    gap: var(--space-16);
+  }
+}
+
+/* Certificate Preview Card Frame */
+.certificateCard {
+  position: relative;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border-strong);
+  border-radius: 8px;
+  padding: var(--space-4);
+  box-shadow: 0 12px 32px rgba(37, 85, 63, 0.08);
+  max-width: 440px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.imageFrame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1.42;
+  background-color: #fafafa;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+}
+
+.certificateImage {
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Narrative & Details Column */
+.narrative {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.eyebrowBadge {
+  background-color: var(--color-primary-soft) !important;
+  color: var(--color-primary) !important;
+  border: 1px solid rgba(37, 85, 63, 0.2) !important;
+  font-size: var(--text-xs) !important;
+  font-weight: var(--font-weight-semibold) !important;
+  letter-spacing: var(--tracking-wider) !important;
+  text-transform: uppercase !important;
+}
+
+.headline {
+  font-family: var(--heading-font-family);
+  font-size: clamp(2rem, 1.6rem + 1.8vw, 3rem);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--leading-tight);
+  color: var(--color-text);
+  letter-spacing: var(--tracking-tight);
+  margin: 0;
+}
+
+.paragraph {
+  font-family: var(--body-font-family);
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text-secondary);
+  margin: 0;
+  max-width: 640px;
+}
+
+/* 4-Pillar Verification Grid */
+.detailsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+  margin-top: var(--space-2);
+}
+
+@media (min-width: 640px) {
+  .detailsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.detailCard {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  padding: var(--space-4) var(--space-5);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.detailLabel {
+  font-family: var(--body-font-family);
+  font-size: var(--text-xs);
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+  color: var(--color-text-muted);
+}
+
+.detailValue {
+  font-family: var(--heading-font-family);
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+}
+
+.detailSub {
+  font-family: var(--body-font-family);
+  font-size: var(--text-xs);
+  color: var(--color-primary);
+  font-weight: var(--font-weight-medium);
+}

@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import {
   AboutHero,
   WhoWeAre,
+  NepcCertificationSection,
   AboutManifestoSignature,
   AboutPartnerships,
   FinalCtaSection,
@@ -19,6 +20,7 @@ export default function AboutPage() {
     <main>
       <AboutHero />
       <WhoWeAre />
+      <NepcCertificationSection />
       <AboutManifestoSignature />
       <AboutPartnerships />
       <FinalCtaSection />

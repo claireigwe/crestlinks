@@ -1,6 +1,7 @@
 import {
   Hero,
   CredibilitySection,
+  NepcCertificationSection,
   CommodityShowcase,
   ExportStory,
   WhyChooseUsManifesto,
@@ -12,6 +13,7 @@ export default function HomePage() {
     <main>
       <Hero />
       <CredibilitySection />
+      <NepcCertificationSection />
       <CommodityShowcase />
       <ExportStory />
       <WhyChooseUsManifesto />

@@ -34,6 +34,7 @@ export * from './navigation/Footer/Footer';
 // Homepage Sections
 export * from './sections/Hero/Hero';
 export * from './sections/CredibilitySection/CredibilitySection';
+export * from './sections/NepcCertificationSection/NepcCertificationSection';
 export * from './sections/CommodityShowcase/CommodityShowcase';
 export * from './sections/ExportStory/ExportStory';
 export * from './sections/WhyChooseUsManifesto/WhyChooseUsManifesto';
